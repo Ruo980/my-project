@@ -1,26 +1,31 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="app">
+    <img class="avatar" src="./assets/Avatar.jpg" alt="Avatar">
+    <h1 class="nickname">梁润勇</h1>
+    <p class="student-id">2310274014</p>
+  </div>
 </template>
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
-</script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+<style scoped>
+.app {
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  padding: 20px;
+}
+
+.avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.nickname {
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.student-id {
+  font-size: 18px;
+  color: gray;
+  margin-top: 5px;
 }
 </style>
